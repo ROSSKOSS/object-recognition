@@ -1,0 +1,1 @@
+c:\users\user\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Foundation.MainWindow.exe.config

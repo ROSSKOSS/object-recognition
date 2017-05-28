@@ -1,0 +1,36 @@
+﻿<Window x:Class="ObjectRecognition.Foundation.MainWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mainPageControls="clr-namespace:ObjectRecognition.Feature.MainPageControls;assembly=ObjectRecognition.Feature.MainPageControls"
+
+        mc:Ignorable="d"
+        Title="Object Recognition Project" Height="720" Width="1280" Icon="Resources/view.png">
+    <Grid x:Name="MainBodyGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="290"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="SideMenuBar" Background="#FF0049B0">
+            <StackPanel x:Name="SideBarStackPanel" Height="689" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Column="1" Background="#FFF4F5F7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Margin="10,0">
+                <TextBlock x:Name="textBlock" TextOptions.TextRenderingMode="Aliased" HorizontalAlignment="Left" Margin="95,27,0,0" TextWrapping="Wrap" Text="Project.OR" VerticalAlignment="Top" FontSize="25" FontFamily="Ubuntu Light" Foreground="#FF4C5C76"/>
+                <Border HorizontalAlignment="Left" VerticalAlignment="Center" Width="65" Margin="16,16,0,20" Height="64" Background="#FFB0BED5" CornerRadius="10" BorderThickness="0">
+                    <Image x:Name="image" Source="Resources/eye.png" Height="Auto" Width="Auto"/>
+                </Border>
+                <Label x:Name="label" TextOptions.TextRenderingMode="Aliased" Content="object recognition" HorizontalAlignment="Left" Margin="91,45,0,0" VerticalAlignment="Top" Foreground="#FF90A4C5"/>
+            </Grid>
+            <StackPanel x:Name="SideMenuStackPanel" HorizontalAlignment="Left" Height="589" Grid.Row="1" VerticalAlignment="Top" Width="290"/>
+
+        </Grid>
+    </Grid>
+
+</Window>

@@ -1,0 +1,10 @@
+C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition.Foundation.Utilities\bin\Debug\ObjectRecognition.Foundation.Utilities.exe.config
+C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition.Foundation.Utilities\bin\Debug\ObjectRecognition.Foundation.Utilities.exe
+C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition.Foundation.Utilities\bin\Debug\ObjectRecognition.Foundation.Utilities.pdb
+C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\App.g.cs
+C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\ObjectRecognition.Foundation.Utilities_MarkupCompile.cache
+C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\ObjectRecognition.Foundation.Utilities.Properties.Resources.resources
+C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\ObjectRecognition.Foundation.Utilities.csproj.GenerateResource.Cache
+C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\ObjectRecognition.Foundation.Utilities.exe
+C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\ObjectRecognition.Foundation.Utilities.pdb
+C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\ObjectRecognition.Foundation.Utilities.csprojResolveAssemblyReference.cache
