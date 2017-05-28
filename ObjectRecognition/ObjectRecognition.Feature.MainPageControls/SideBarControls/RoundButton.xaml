@@ -8,7 +8,7 @@
              d:DesignHeight="300" d:DesignWidth="300" Width="50" Height="50" d:DataContext="{Binding}">
     <Grid Width="50" Height="50" MouseLeftButtonDown="Grid_MouseLeftButtonDown" MouseLeftButtonUp="Grid_MouseLeftButtonUp" MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave">
         <Rectangle x:Name="Body" Fill="#FF0049B0" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="40" Margin="5,5,0,0" RadiusX="20" RadiusY="20"/>
-        <Image x:Name="Icon" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="23" Margin="13.5,13.5,0,0" Source="{Binding}"/>
+        <Image x:Name="Icon" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="24" Margin="13,13,0,0" Source="{Binding}"/>
 
     </Grid>
 </UserControl>

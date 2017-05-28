@@ -20,3 +20,5 @@ C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.F
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.DetailsWindow\obj\Debug\ObjectRecognition.Feature.DetailsWindow.pdb
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.DetailsWindow\bin\Debug\ObjectRecognition.Foundation.Utilities.exe
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.DetailsWindow\bin\Debug\ObjectRecognition.Foundation.Utilities.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.DetailsWindow\bin\Debug\ObjectRecognition.Foundation.UI.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.DetailsWindow\bin\Debug\ObjectRecognition.Foundation.UI.pdb

@@ -25,3 +25,5 @@ C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\b
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\LiveCharts.pdb
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\LiveCharts.xml
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\ObjectRecognition.Project.MainWindow.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Foundation.UI.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Foundation.UI.pdb

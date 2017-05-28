@@ -20,30 +20,40 @@
                 <ColumnDefinition Width="33*"/>
             </Grid.ColumnDefinitions>
             <Grid x:Name="redChartGrid">
-                <Border  Margin="10,0,0,0" Background="White" CornerRadius="5" BorderBrush="#FFEAECF0" BorderThickness="1" >
+                <Border x:Name="redBorder"  Margin="10,0,0,0" Background="White" CornerRadius="5" BorderBrush="#FFEAECF0" BorderThickness="1" >
                     <wpf:CartesianChart x:Name="redChart"  UpdaterState="Paused" AnimationsSpeed="0:0:0.8" DisableAnimations="True"/>
                 </Border>
             </Grid>
             <Grid x:Name="greenChartGrid" Grid.Column="1">
-                <Border  Margin="10,0" Background="White" BorderBrush="#FFEAECF0" BorderThickness="1" CornerRadius="5" >
+                <Border x:Name="greenBorder"  Margin="10,0" Background="White" BorderBrush="#FFEAECF0" BorderThickness="1" CornerRadius="5" >
                     <wpf:CartesianChart x:Name="greenChart" UpdaterState="Paused" AnimationsSpeed="0:0:0.8" DisableAnimations="True" />
                 </Border>
             </Grid>
             <Grid x:Name="blueChartGrid" Grid.Column="2">
-                <Border Margin="0,0,10,0" Background="White" BorderBrush="#FFEAECF0" BorderThickness="1" CornerRadius="5" >
+                <Border x:Name="blueBorder" Margin="0,0,10,0" Background="White" BorderBrush="#FFEAECF0" BorderThickness="1" CornerRadius="5" >
                     <wpf:CartesianChart x:Name="blueChart"  UpdaterState="Paused" AnimationsSpeed="0:0:0.8" DisableAnimations="True"/>
                 </Border>
             </Grid>
         </Grid>
-        <Grid x:Name="detailsGrid" Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="167*"/>
-                <ColumnDefinition Width="333*"/>
-            </Grid.ColumnDefinitions>
-            <Border Margin="10,10,0,10" Background="White" BorderBrush="#FFEAECF0" BorderThickness="1" CornerRadius="5" Padding="5">
+        <Border  Margin="10" Background="White" CornerRadius="5" BorderBrush="#FFEAECF0" BorderThickness="1" Grid.Row="1" >
+            <Grid x:Name="detailsGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="167*"/>
+                    <ColumnDefinition Width="333*"/>
+                </Grid.ColumnDefinitions>
+                <wpf:PieChart x:Name="pieChart" DisableAnimations="True" DataTooltip="{x:Null}" Margin="10">
 
-            </Border>
-        </Grid>
+                </wpf:PieChart>
+                <Rectangle Grid.Column="1" HorizontalAlignment="Left" Width="1" Stroke="#FFEAECF0"/>
+                <Image x:Name="image" Grid.Column="1" HorizontalAlignment="Left" Height="220" Margin="10,10,0,0" VerticalAlignment="Top" Width="220"/>
+                <Label x:Name="Title" Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="235,10,0,0" VerticalAlignment="Top" Foreground="#FF4C5C76" FontFamily="Ubuntu" FontSize="18"/>
+                <Rectangle Grid.Column="1" HorizontalAlignment="Left" Width="1" Stroke="#FFEAECF0"/>
+                <TextBlock x:Name="pathText" Grid.Column="1" Margin="240,33,10,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="46" Foreground="#FF90A4C5"/>
+                <TextBlock x:Name="descriptionBlock" Grid.Column="1" Margin="240,79,10,10" TextWrapping="Wrap" Text="TextBlock"/>
+
+            </Grid>
+
+        </Border>
 
     </Grid>
 </UserControl>

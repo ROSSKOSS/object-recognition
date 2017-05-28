@@ -1,0 +1,13 @@
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\bin\Debug\ObjectRecognition.Foundation.UI.exe.config
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\bin\Debug\ObjectRecognition.Foundation.UI.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\bin\Debug\ObjectRecognition.Foundation.UI.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\LoadingSign.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\App.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\ObjectRecognition.Foundation.UI_MarkupCompile.cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\ObjectRecognition.Foundation.UI_MarkupCompile.lref
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\LoadingSign.baml
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\ObjectRecognition.Foundation.UI.g.resources
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\ObjectRecognition.Foundation.UI.Properties.Resources.resources
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\ObjectRecognition.Foundation.UI.csproj.GenerateResource.Cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\ObjectRecognition.Foundation.UI.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\ObjectRecognition.Foundation.UI.pdb

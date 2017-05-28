@@ -14,14 +14,14 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid x:Name="SideMenuBar" Background="#FF0049B0">
-            <StackPanel x:Name="SideBarStackPanel" Height="689" VerticalAlignment="Top"/>
+            <StackPanel x:Name="SideBarStackPanel" Height="679" VerticalAlignment="Top" Margin="0,10,0,0"/>
         </Grid>
         <Grid Grid.Column="1" Background="#FFF4F5F7">
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Grid Margin="10,0">
+            <Grid Margin="10,0" MouseLeftButtonUp="Grid_MouseLeftButtonUp" Background="#FFF4F5F7" Cursor="Hand">
                 <TextBlock x:Name="textBlock" TextOptions.TextRenderingMode="Aliased" HorizontalAlignment="Left" Margin="95,27,0,0" TextWrapping="Wrap" Text="Project.OR" VerticalAlignment="Top" FontSize="25" FontFamily="Ubuntu Light" Foreground="#FF4C5C76"/>
                 <Border HorizontalAlignment="Left" VerticalAlignment="Center" Width="65" Margin="16,16,0,20" Height="64" Background="#FFB0BED5" CornerRadius="10" BorderThickness="0">
                     <Image x:Name="image" Source="Resources/eye.png" Height="Auto" Width="Auto"/>

@@ -46,7 +46,12 @@ namespace ObjectRecognition.Project.MainWindow
         private void OpenBitmap(object sender, MouseButtonEventArgs e)
         {
             SourceBitmap = BitmapOpener.Open();
-            pageHost.Children.Add(new DetailsWindow(SourceBitmap, BitmapOpener.FileName) { Width = double.NaN, Height = double.NaN });
+            pageHost.Children.Add(new DetailsWindow(SourceBitmap, BitmapOpener.FileName, BitmapOpener.FilePath) { Width = double.NaN, Height = double.NaN });
+        }
+
+        private void Grid_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/ROSSKOSS/object-recognition");
         }
     }
 }

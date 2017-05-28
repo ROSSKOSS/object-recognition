@@ -1,7 +1,9 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
+using System.Windows;
 
 namespace FileOpener
 {
@@ -9,7 +11,7 @@ namespace FileOpener
     {
         public static string FileName { get; set; }
         public static string FilePath { get; set; }
-
+        public static MemoryStream FileStream { get; set; }
         public static Bitmap Open()
         {
             Stream myStream = null;
@@ -31,7 +33,6 @@ namespace FileOpener
                             Bitmap bmp = (Bitmap)Image.FromFile(openFileDialog1.FileName);
                             FileName = openFileDialog1.SafeFileName;
                             FilePath = openFileDialog1.FileName;
-
                             //BitmapImage bmp = new BitmapImage();
                             return bmp;
                         }
@@ -39,7 +40,7 @@ namespace FileOpener
                 }
                 catch (Exception ex)
                 {
-                    return null;
+                    MessageBox.Show("Can't open the file!", ex.Source);
                 }
             }
             return null;

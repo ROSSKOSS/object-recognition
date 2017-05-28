@@ -1,12 +1,15 @@
 ﻿using LiveCharts;
 using LiveCharts.Wpf;
 using ObjectRecognition.Foundation.Utilities.Bitmap;
-using ObjectRecognition.Foundation.Utilities.Converters;
+using System;
 using System.ComponentModel;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Windows.Controls;
-using System.Windows.Media;
+using ObjectRecognition.Foundation.Utilities.Converters;
 using Color = System.Windows.Media.Color;
+using ObjectRecognition.Foundation.UI;
 
 namespace ObjectRecognition.Feature.DetailsWindow
 {
@@ -15,12 +18,28 @@ namespace ObjectRecognition.Feature.DetailsWindow
     /// </summary>
     public partial class DetailsWindow : UserControl
     {
-        public DetailsWindow(Bitmap bitmapSource, string title)
+        public Func<ChartPoint, string> PointLabel { get; set; }
+        private LoadingSign loadRed, loadGreen, loadBlue, loadPie;
+        public DetailsWindow(Bitmap bitmapSource, string title, string path)
         {
             InitializeComponent();
+            loadRed = new LoadingSign();
+            loadGreen = new LoadingSign();
+            loadBlue = new LoadingSign();
+            loadPie = new LoadingSign();
+            redChartGrid.Children.Add(loadRed);
+            greenChartGrid.Children.Add(loadGreen);
+            blueChartGrid.Children.Add(loadBlue);
+            detailsGrid.Children.Add(loadPie);
             SetUpWrokersColors(bitmapSource);
-           //image.Source = BitmapConverter.ToImageSource(bitmapSource);
-           // Title.Content = title;
+            SetUpPieChart(bitmapSource);
+            image.Source = BitmapConverter.ToImageSource(bitmapSource);
+            Title.Content = title;
+            pathText.Text = $"file path: [{path}]";
+            descriptionBlock.Text += $"Width: {bitmapSource.Width}px\n";
+            descriptionBlock.Text += $"Height: {bitmapSource.Height}px\n";
+            descriptionBlock.Text += $"Pixel amount: {bitmapSource.Width * bitmapSource.Height}px\n";
+
         }
 
         #region Charts
@@ -48,6 +67,7 @@ namespace ObjectRecognition.Feature.DetailsWindow
 
         private void RedColorsCollected(object sender, RunWorkerCompletedEventArgs e)
         {
+            redChartGrid.Children.Remove(loadRed);
             redChart.UpdaterState = UpdaterState.Running;
             var result = e.Result as int[];
             var seriesCollection = new SeriesCollection
@@ -70,6 +90,7 @@ namespace ObjectRecognition.Feature.DetailsWindow
 
         private void GreenColorsCollected(object sender, RunWorkerCompletedEventArgs e)
         {
+            greenChartGrid.Children.Remove(loadGreen);
             greenChart.UpdaterState = UpdaterState.Running;
             var result = e.Result as int[];
             var seriesCollection = new SeriesCollection
@@ -92,6 +113,7 @@ namespace ObjectRecognition.Feature.DetailsWindow
 
         private void BlueColorsCollected(object sender, RunWorkerCompletedEventArgs e)
         {
+            blueChartGrid.Children.Remove(loadBlue);
             blueChart.UpdaterState = UpdaterState.Running;
             var result = e.Result as int[];
             var seriesCollection = new SeriesCollection
@@ -114,5 +136,52 @@ namespace ObjectRecognition.Feature.DetailsWindow
 
         #endregion Charts
 
-     }
+        #region PieChart
+
+        private void SetUpPieChart(Bitmap bitmap)
+        {
+            var colorDistributionWorker = new BackgroundWorker();
+            colorDistributionWorker.WorkerSupportsCancellation = true;
+            colorDistributionWorker.DoWork += new ColorStatistic().GetColorDistribution;
+            colorDistributionWorker.RunWorkerCompleted += GetColorDistributionCompleted;
+            colorDistributionWorker.RunWorkerAsync(bitmap.Clone());
+        }
+
+        private void GetColorDistributionCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            detailsGrid.Children.Remove(loadPie);
+            var result = e.Result as int[];
+            PointLabel = chartPoint =>
+               string.Format("{0:P}", chartPoint.Participation);
+            var seriesCollection = new SeriesCollection
+            {
+                new PieSeries()
+                {
+                   Values = new ChartValues<int>() {result[0]},
+                   LabelPoint = PointLabel,
+                   DataLabels = true,
+                   Title = "Red"
+                },
+                new PieSeries()
+                {
+                   Values = new ChartValues<int>() {result[1]},
+                   DataLabels = true,
+                   LabelPoint = PointLabel,
+                   Title = "Green"
+                },
+                new PieSeries()
+                {
+                   Values = new ChartValues<int>() {result[2]},
+                   DataLabels = true,
+                   LabelPoint = PointLabel,
+                   Title = "Blue"
+                }
+            };
+            pieChart.SeriesColors = new ColorsCollection() { Color.FromRgb(255, 0, 0), Color.FromRgb(0, 255, 0), Color.FromRgb(0, 0, 255) };
+            pieChart.Series = seriesCollection;
+            pieChart.HoverPushOut = 10;
+        }
+
+        #endregion
+    }
 }
