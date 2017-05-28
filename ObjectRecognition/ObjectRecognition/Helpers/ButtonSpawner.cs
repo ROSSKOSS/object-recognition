@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using ObjectRecognition.Foundation.Utilities.Converters;
 using ObjectRecognition.Feature.MainPageControls.SideBarControls;
 using ObjectRecognition.Feature.MainPageControls.SideMenuControls;
+using ObjectRecognition.Foundation.Utilities;
+using ObjectRecognition.Foundation.Utilities.Converters;
 
-namespace ObjectRecognition.Foundation.Utilities.Helpers
+namespace ObjectRecognition.Project.MainWindow.Helpers
 {
     class ButtonSpawner
     {

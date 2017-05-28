@@ -9,7 +9,7 @@ namespace ObjectRecognition.Foundation.Utilities.Converters
 {
     public class BitmapConverter
     {
-        public static ImageSource ToImageSource(Bitmap bmp)
+        public static ImageSource ToImageSource(System.Drawing.Bitmap bmp)
         {
             return Imaging.CreateBitmapSourceFromHBitmap(bmp.GetHbitmap(),
                    IntPtr.Zero, Int32Rect.Empty,

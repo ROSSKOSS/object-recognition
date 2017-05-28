@@ -3,14 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectRecognition.Foundation.MainWindow", "ObjectRecognition\ObjectRecognition.Foundation.MainWindow.csproj", "{0B0AC0E6-FF7B-4F0D-A626-F983886C01AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectRecognition.Project.MainWindow", "ObjectRecognition\ObjectRecognition.Project.MainWindow.csproj", "{0B0AC0E6-FF7B-4F0D-A626-F983886C01AD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{3588B85E-29F8-4F72-94DC-9B6CA3F93D41}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{991A71D5-DFEC-4AAC-893E-3E2C0CD8D40F}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Pictures\Project\attachment.jpg = ..\..\..\..\Pictures\Project\attachment.jpg
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{245C54CB-CE7F-4C6C-8E39-BA70AEC575A3}"
 EndProject
@@ -19,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectRecognition.Feature.MainPageControls", "ObjectRecognition.Feature.MainPageControls\ObjectRecognition.Feature.MainPageControls.csproj", "{1FB4CC20-5CC7-433C-ABAC-C16CCF3C92B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectRecognition.Foundation.Utilities", "ObjectRecognition.Foundation.Utilities\ObjectRecognition.Foundation.Utilities.csproj", "{7A87C98D-3A62-4670-A3C5-65704A8D8116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectRecognition.Feature.DetailsWindow", "ObjectRecognition.Feature.DetailsWindow\ObjectRecognition.Feature.DetailsWindow.csproj", "{ECFD3152-53D6-4A77-83CD-FF7009D4E986}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +35,10 @@ Global
 		{7A87C98D-3A62-4670-A3C5-65704A8D8116}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A87C98D-3A62-4670-A3C5-65704A8D8116}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A87C98D-3A62-4670-A3C5-65704A8D8116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFD3152-53D6-4A77-83CD-FF7009D4E986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFD3152-53D6-4A77-83CD-FF7009D4E986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFD3152-53D6-4A77-83CD-FF7009D4E986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFD3152-53D6-4A77-83CD-FF7009D4E986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,5 +46,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1FB4CC20-5CC7-433C-ABAC-C16CCF3C92B8} = {1A05161A-B825-404C-A835-4520A79B3414}
 		{7A87C98D-3A62-4670-A3C5-65704A8D8116} = {245C54CB-CE7F-4C6C-8E39-BA70AEC575A3}
+		{ECFD3152-53D6-4A77-83CD-FF7009D4E986} = {1A05161A-B825-404C-A835-4520A79B3414}
 	EndGlobalSection
 EndGlobal

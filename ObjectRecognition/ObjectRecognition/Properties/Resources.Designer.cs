@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ObjectRecognition.Foundation.MainWindow.Properties {
+namespace ObjectRecognition.Project.MainWindow.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace ObjectRecognition.Foundation.MainWindow.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ObjectRecognition.Foundation.MainWindow.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ObjectRecognition.Project.MainWindow.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -17,3 +17,23 @@ C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectReco
 C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Foundation.Utilities.exe
 C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Feature.MainPageControls.pdb
 C:\Users\User\documents\visual studio 2015\Projects\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Foundation.Utilities.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Foundation.MainWindow.exe.config
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\ObjectRecognition.Foundation.MainWindow.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\ObjectRecognition.Foundation.MainWindow.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Foundation.MainWindow.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Foundation.MainWindow.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Feature.MainPageControls.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Foundation.Utilities.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Feature.MainPageControls.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Foundation.Utilities.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\ObjectRecognition.Foundation.MainWindow.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\MainWindow.baml
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\MainWindow.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\App.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\ObjectRecognition.Foundation.MainWindow_MarkupCompile.cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\ObjectRecognition.Foundation.MainWindow_MarkupCompile.lref
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\App.baml
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\ObjectRecognition.Foundation.MainWindow.g.resources
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\ObjectRecognition.Foundation.MainWindow.Properties.Resources.resources
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\obj\Debug\ObjectRecognition.Foundation.MainWindow.csproj.GenerateResource.Cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Project.MainWindow.exe.config

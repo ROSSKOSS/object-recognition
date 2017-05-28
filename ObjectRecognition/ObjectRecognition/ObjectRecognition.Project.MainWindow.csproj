@@ -7,8 +7,8 @@
     <ProjectGuid>{0B0AC0E6-FF7B-4F0D-A626-F983886C01AD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ObjectRecognition.Foundation.MainWindow</RootNamespace>
-    <AssemblyName>ObjectRecognition.Foundation.MainWindow</AssemblyName>
+    <RootNamespace>ObjectRecognition.Project.MainWindow</RootNamespace>
+    <AssemblyName>ObjectRecognition.Project.MainWindow</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -103,6 +103,10 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ObjectRecognition.Feature.DetailsWindow\ObjectRecognition.Feature.DetailsWindow.csproj">
+      <Project>{ECFD3152-53D6-4A77-83CD-FF7009D4E986}</Project>
+      <Name>ObjectRecognition.Feature.DetailsWindow</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ObjectRecognition.Feature.MainPageControls\ObjectRecognition.Feature.MainPageControls.csproj">
       <Project>{1fb4cc20-5cc7-433c-abac-c16ccf3c92b8}</Project>
       <Name>ObjectRecognition.Feature.MainPageControls</Name>

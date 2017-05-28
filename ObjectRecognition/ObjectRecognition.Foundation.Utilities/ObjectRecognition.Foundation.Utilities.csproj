@@ -62,9 +62,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bitmap\ColorStatistic.cs" />
     <Compile Include="Converters\BitmapConverter.cs" />
     <Compile Include="Converters\ColorConverter.cs" />
     <Compile Include="Defaults.cs" />
+    <Compile Include="FileOpener\BitmapOpener.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
