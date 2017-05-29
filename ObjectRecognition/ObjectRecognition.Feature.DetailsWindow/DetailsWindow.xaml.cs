@@ -1,15 +1,14 @@
 ﻿using LiveCharts;
 using LiveCharts.Wpf;
+using ObjectRecognition.Foundation.UI;
 using ObjectRecognition.Foundation.Utilities.Bitmap;
+using ObjectRecognition.Foundation.Utilities.Converters;
+using ObjectRecognition.Foundation.Windows;
 using System;
 using System.ComponentModel;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.IO;
 using System.Windows.Controls;
-using ObjectRecognition.Foundation.Utilities.Converters;
 using Color = System.Windows.Media.Color;
-using ObjectRecognition.Foundation.UI;
 
 namespace ObjectRecognition.Feature.DetailsWindow
 {
@@ -20,26 +19,31 @@ namespace ObjectRecognition.Feature.DetailsWindow
     {
         public Func<ChartPoint, string> PointLabel { get; set; }
         private LoadingSign loadRed, loadGreen, loadBlue, loadPie;
+        private Bitmap _source;
         public DetailsWindow(Bitmap bitmapSource, string title, string path)
         {
             InitializeComponent();
+            _source = bitmapSource;
+
             loadRed = new LoadingSign();
             loadGreen = new LoadingSign();
             loadBlue = new LoadingSign();
             loadPie = new LoadingSign();
+
             redChartGrid.Children.Add(loadRed);
             greenChartGrid.Children.Add(loadGreen);
             blueChartGrid.Children.Add(loadBlue);
             detailsGrid.Children.Add(loadPie);
+
             SetUpWrokersColors(bitmapSource);
             SetUpPieChart(bitmapSource);
+
             image.Source = BitmapConverter.ToImageSource(bitmapSource);
             Title.Content = title;
             pathText.Text = $"file path: [{path}]";
             descriptionBlock.Text += $"Width: {bitmapSource.Width}px\n";
             descriptionBlock.Text += $"Height: {bitmapSource.Height}px\n";
             descriptionBlock.Text += $"Pixel amount: {bitmapSource.Width * bitmapSource.Height}px\n";
-
         }
 
         #region Charts
@@ -136,6 +140,11 @@ namespace ObjectRecognition.Feature.DetailsWindow
 
         #endregion Charts
 
+        private void image_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            new ImageFullscreen(_source, Title.Content.ToString()).Show();
+        }
+
         #region PieChart
 
         private void SetUpPieChart(Bitmap bitmap)
@@ -182,6 +191,6 @@ namespace ObjectRecognition.Feature.DetailsWindow
             pieChart.HoverPushOut = 10;
         }
 
-        #endregion
+        #endregion PieChart
     }
 }

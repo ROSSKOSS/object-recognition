@@ -1,0 +1,17 @@
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ObjectRecognition.Foundation.Windows.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ImageFullscreen.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\App.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ObjectRecognition.Foundation.Windows_MarkupCompile.cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ObjectRecognition.Foundation.Windows_MarkupCompile.lref
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Debug\ObjectRecognition.Foundation.Windows.exe.config
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Debug\ObjectRecognition.Foundation.Windows.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Debug\ObjectRecognition.Foundation.Windows.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ImageFullscreen.baml
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ObjectRecognition.Foundation.Windows.g.resources
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ObjectRecognition.Foundation.Windows.Properties.Resources.resources
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ObjectRecognition.Foundation.Windows.csproj.GenerateResource.Cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ObjectRecognition.Foundation.Windows.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ObjectRecognition.Foundation.Windows.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Debug\ObjectRecognition.Foundation.Utilities.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Debug\ObjectRecognition.Foundation.Utilities.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\App.baml
