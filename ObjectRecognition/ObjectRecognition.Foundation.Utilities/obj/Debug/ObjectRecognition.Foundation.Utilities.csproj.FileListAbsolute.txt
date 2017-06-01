@@ -18,3 +18,6 @@ C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.F
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\ObjectRecognition.Foundation.Utilities.csproj.GenerateResource.Cache
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\ObjectRecognition.Foundation.Utilities.exe
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\ObjectRecognition.Foundation.Utilities.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\ObjectRecognition.Foundation.Utilities_MarkupCompile.lref
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\App.baml
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Debug\ObjectRecognition.Foundation.Utilities.g.resources

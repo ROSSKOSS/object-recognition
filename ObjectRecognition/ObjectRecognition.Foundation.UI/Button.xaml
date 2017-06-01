@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="ObjectRecognition.Foundation.UI.Button"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ObjectRecognition.Foundation.UI"
+             mc:Ignorable="d" Height="50.75" Width="163" HorizontalAlignment="Left" VerticalAlignment="Top">
+    <Grid Margin="0,0,0,1">
+        <Grid x:Name="Body" MouseEnter="Body_MouseEnter" MouseLeave="Body_MouseLeave" MouseLeftButtonDown="Body_MouseLeftButtonDown" MouseLeftButtonUp="Body_MouseLeftButtonUp">
+            <Rectangle x:Name="BodyRectangle" Fill="#FFF4F5F7" Height="50" VerticalAlignment="Top" RadiusX="10" RadiusY="10"/>
+            <Label x:Name="Title" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontFamily="Ubuntu Light" Foreground="#FF4C5C76" TextOptions.TextHintingMode="Fixed" HorizontalContentAlignment="Center" Margin="0,11,0,0"/>
+        </Grid>
+
+    </Grid>
+</UserControl>

@@ -111,6 +111,10 @@
       <Project>{1fb4cc20-5cc7-433c-abac-c16ccf3c92b8}</Project>
       <Name>ObjectRecognition.Feature.MainPageControls</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ObjectRecognition.Feature.OrWindow\ObjectRecognition.Feature.OrWindow.csproj">
+      <Project>{86C77089-E298-4653-BD99-EF6D2BC60004}</Project>
+      <Name>ObjectRecognition.Feature.OrWindow</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ObjectRecognition.Foundation.Utilities\ObjectRecognition.Foundation.Utilities.csproj">
       <Project>{7A87C98D-3A62-4670-A3C5-65704A8D8116}</Project>
       <Name>ObjectRecognition.Foundation.Utilities</Name>

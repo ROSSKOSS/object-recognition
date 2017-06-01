@@ -3,13 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ObjectRecognition.Foundation.Windows"
-        mc:Ignorable="d"
+       mc:Ignorable="d"
         Title="ImageFullscreen" Height="715" Width="1280" KeyUp="Window_KeyUp">
     <Grid x:Name="Main" Background="Black">
-        <ScrollViewer x:Name="ImageScrollView" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" >
+        <ScrollViewer x:Name="ImageScrollView" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Template="{DynamicResource ScrollViewerControlTemplate}" OverridesDefaultStyle="True" >
             <Image x:Name="image" MouseWheel="image_MouseWheel"/>
         </ScrollViewer>
-
     </Grid>
 </Window>

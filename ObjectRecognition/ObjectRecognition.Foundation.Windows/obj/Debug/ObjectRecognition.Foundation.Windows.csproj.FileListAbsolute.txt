@@ -2,7 +2,6 @@ C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.F
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ImageFullscreen.g.cs
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\App.g.cs
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ObjectRecognition.Foundation.Windows_MarkupCompile.cache
-C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Debug\ObjectRecognition.Foundation.Windows_MarkupCompile.lref
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Debug\ObjectRecognition.Foundation.Windows.exe.config
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Debug\ObjectRecognition.Foundation.Windows.exe
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Debug\ObjectRecognition.Foundation.Windows.pdb

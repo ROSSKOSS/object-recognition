@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="ObjectRecognition.Foundation.UI.ImageDisplay"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ObjectRecognition.Foundation.UI"
+             mc:Ignorable="d" Height="177.334" Width="150">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" Stroke="#FFEAECF0" RadiusX="5" RadiusY="5"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="90" Margin="1,25,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="Title" Content="Title" HorizontalAlignment="Left" Margin="5,3,0,0" VerticalAlignment="Top" FontFamily="Ubuntu Light" FontSize="10" Foreground="#FF4C5C76"/>
+    </Grid>
+</UserControl>
