@@ -6,7 +6,7 @@
        mc:Ignorable="d"
         Title="ImageFullscreen" Height="715" Width="1280" KeyUp="Window_KeyUp">
     <Grid x:Name="Main" Background="Black">
-        <ScrollViewer x:Name="ImageScrollView" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Template="{DynamicResource ScrollViewerControlTemplate}" OverridesDefaultStyle="True" >
+        <ScrollViewer x:Name="ImageScrollView" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Template="{DynamicResource ScrollViewerControlTemplate}" >
             <Image x:Name="image" MouseWheel="image_MouseWheel"/>
         </ScrollViewer>
     </Grid>

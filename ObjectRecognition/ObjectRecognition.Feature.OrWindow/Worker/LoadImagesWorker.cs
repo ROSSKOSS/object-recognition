@@ -5,7 +5,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using ObjectRecognition.Foundation.UI;
+using ObjectRecognition.Foundation.Utilities.Converters;
+using Image = System.Drawing.Image;
 
 namespace ObjectRecognition.Feature.OrWindow.Worker
 {
@@ -18,7 +21,8 @@ namespace ObjectRecognition.Feature.OrWindow.Worker
             foreach ( var path in paths)
             {
                 var image = (Bitmap)Image.FromFile(path);
-                Bitmap img = new Bitmap(image, new Size(148, 90));
+                Bitmap img = new Bitmap(image, new Size(200, Convert.ToInt32(200/Convert.ToDouble(image.Width)*image.Height)));
+                
                 displays.Add(img);
             }
             e.Result = displays;

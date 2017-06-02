@@ -10,6 +10,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -22,10 +23,29 @@ namespace ObjectRecognition.Foundation.UI
     /// </summary>
     public partial class ImageDisplay : UserControl
     {
-        public ImageDisplay(string title, Bitmap source)
+        public bool DeletedFlag;
+        public ImageDisplay(Bitmap source, double width, double height)
         {
             InitializeComponent();
             image.Source = BitmapConverter.ToImageSource(source);
+            Width = width;
+            Height = height;
+            DeletedFlag = false;
+        }
+
+        private void UserControl_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            if (DeletedFlag)
+            {
+                deletedMarker.Fill = null;
+                DeletedFlag = false;
+            }
+            else
+            {
+                deletedMarker.Fill = (System.Windows.Media.Brush)new BrushConverter().ConvertFrom("#FFFF0000");
+                DeletedFlag = true;
+            }
+
         }
     }
 }

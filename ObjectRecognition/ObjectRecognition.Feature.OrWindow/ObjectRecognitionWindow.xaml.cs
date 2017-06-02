@@ -19,6 +19,7 @@ using System.Windows.Shapes;
 using ObjectRecognition.Feature.OrWindow.Worker;
 using ObjectRecognition.Foundation.UI;
 using ObjectRecognition.Foundation.Utilities.Bitmap;
+using HorizontalAlignment = System.Windows.HorizontalAlignment;
 using UserControl = System.Windows.Controls.UserControl;
 
 namespace ObjectRecognition.Feature.OrWindow
@@ -32,43 +33,30 @@ namespace ObjectRecognition.Feature.OrWindow
         {
             InitializeComponent();
             SetUpButtons();
+
         }
 
         private void SetUpButtons()
         {
-            var selectFolderButton = new Foundation.UI.Button("Select folder") { Margin = new Thickness(10, 10, 10, 10) };
-            selectFolderButton.MouseLeftButtonUp += LoadImages;
-            leftGrid.Children.Add(selectFolderButton);
+            var createHistogramButton = new Foundation.UI.Button("Create Histogram", 200, 50) { Margin = new Thickness(10, 50, 10, 10) };
+            createHistogramButton.MouseLeftButtonUp += OpenCreateHistogramWindow;
+            buttonGrid.Children.Add(createHistogramButton);
+            createHistogramButton.VerticalAlignment = VerticalAlignment.Top;
+            createHistogramButton.HorizontalAlignment = HorizontalAlignment.Center;
+
+            var openHistogramButton = new Foundation.UI.Button("Open Histogram", 200, 50) { Margin = new Thickness(10, 10, 10, 50) };
+            //openHistogramButton.MouseLeftButtonUp += LoadImages;
+            buttonGrid.Children.Add(openHistogramButton);
+            openHistogramButton.VerticalAlignment = VerticalAlignment.Bottom;
+            openHistogramButton.HorizontalAlignment = HorizontalAlignment.Center;
         }
 
-        private void LoadImages(object sender, MouseButtonEventArgs e)
+        private void OpenCreateHistogramWindow(object sender, MouseButtonEventArgs e)
         {
-            List<string> files;
-            using (var fbd = new FolderBrowserDialog())
-            {
-                DialogResult result = fbd.ShowDialog();
-
-                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
-                {
-                    files = Directory.GetFiles(fbd.SelectedPath, "*.*", SearchOption.AllDirectories).Where(s => s.EndsWith(".bmp") || s.EndsWith(".jpg")|| s.EndsWith(".png")||s.EndsWith(".jpeg")).ToList(); 
-                    var redColorWorker = new BackgroundWorker();
-                    redColorWorker.WorkerSupportsCancellation = true;
-                    redColorWorker.DoWork += new LoadImagesWorker().Load;
-                    redColorWorker.RunWorkerCompleted += FilesLoaded;
-                    redColorWorker.RunWorkerAsync(files);
-                }
-            }
-            
+            parentGrid.Children.Clear();
+            parentGrid.Children.Add(new ImageSelectionWindow() {Width = Double.NaN, Height = Double.NaN});
         }
 
-        private void FilesLoaded(object sender, RunWorkerCompletedEventArgs e)
-        {
-            var displays = e.Result as List<Bitmap>;
-            
-            foreach (var imageDisplay in displays)
-            {
-                displayHost.Children.Add(new ImageDisplay(" ",imageDisplay) {Margin = new Thickness(5,5,5,5)});
-            }
-        }
+        
     }
 }

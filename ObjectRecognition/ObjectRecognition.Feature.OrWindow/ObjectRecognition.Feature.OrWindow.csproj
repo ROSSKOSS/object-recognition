@@ -70,6 +70,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ImageSelectionWindow.xaml.cs">
+      <DependentUpon>ImageSelectionWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Worker\LoadImagesWorker.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +107,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="ImageSelectionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ObjectRecognitionWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

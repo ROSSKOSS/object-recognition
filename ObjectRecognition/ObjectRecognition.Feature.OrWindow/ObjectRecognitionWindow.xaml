@@ -3,28 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:local="clr-namespace:ObjectRecognition.Feature.OrWindow"
-              xmlns:wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             xmlns:local="clr-namespace:ObjectRecognition.Foundation.UI;assembly=ObjectRecognition.Foundation.UI"
+             xmlns:wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
 
              mc:Ignorable="d" Width="1063" Height="560">
-    <Grid Background="White">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400" />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Grid x:Name="leftGrid">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="130" />
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <Border Margin="10,0,10,10" Grid.Row="1" Background="White" BorderBrush="#FFEAECF0" BorderThickness="1" CornerRadius="5">
-                
-            </Border>
-        </Grid>
-        <Grid x:Name="rightGrid" Grid.Column="1" >
-            <ScrollViewer x:Name="images1" VerticalScrollBarVisibility="Auto" Template="{DynamicResource ScrollViewerControlTemplate}" Padding="5">
-                <WrapPanel x:Name="displayHost"/>
-            </ScrollViewer>
+    <Grid x:Name="parentGrid" >
+        <Grid x:Name="optionGrid" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300*"/>
+                <ColumnDefinition Width="456"/>
+                <ColumnDefinition Width="300*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="155*"/>
+                    <RowDefinition Height="247"/>
+                    <RowDefinition Height="155*"/>
+                </Grid.RowDefinitions>
+                <Border Background="White" BorderBrush="#FFEAECF0" BorderThickness="1" CornerRadius="5" Margin="10,0" Grid.Row="1" >
+                    <Grid x:Name="buttonGrid">
+                        <Label x:Name="label" Content="-OR-" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="Ubuntu Light" Foreground="#FF90A4C5"/>
+                    </Grid>
+                </Border>
+            </Grid>
         </Grid>
     </Grid>
 

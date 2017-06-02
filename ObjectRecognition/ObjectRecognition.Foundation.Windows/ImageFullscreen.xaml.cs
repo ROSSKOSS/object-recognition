@@ -32,8 +32,8 @@ namespace ObjectRecognition.Foundation.Windows
             InitializeComponent();
             image.Source = BitmapConverter.ToImageSource(source);
             Title = title;
-            Style ScrollStyle = (Style)Application.Current.Resources["ScrollViewerControlTemplate"];
-            ImageScrollView.Style = ScrollStyle;
+           // Style ScrollStyle = (Style)Application.Current.Resources["ScrollViewerControlTemplate"];
+           // ImageScrollView.Style = ScrollStyle;
         }
 
         private void image_MouseWheel(object sender, MouseWheelEventArgs e)

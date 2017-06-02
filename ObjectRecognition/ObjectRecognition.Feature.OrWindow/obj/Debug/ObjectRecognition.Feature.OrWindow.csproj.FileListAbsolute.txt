@@ -20,6 +20,7 @@ C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.F
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\obj\Debug\ObjectRecognition.Feature.OrWindow.exe
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\obj\Debug\ObjectRecognition.Feature.OrWindow.pdb
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\obj\Debug\ObjectRecognition.Feature.OrWindow.csprojResolveAssemblyReference.cache
-C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\obj\Debug\App.baml
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\bin\Debug\ObjectRecognition.Foundation.UI.exe
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\bin\Debug\ObjectRecognition.Foundation.UI.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\obj\Debug\ImageSelectionWindow.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\obj\Debug\ImageSelectionWindow.baml
