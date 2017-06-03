@@ -1,0 +1,16 @@
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Release\ObjectRecognition.Foundation.Windows.exe.config
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Release\ObjectRecognition.Foundation.Windows.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Release\ObjectRecognition.Foundation.Windows.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Release\ObjectRecognition.Foundation.Utilities.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\bin\Release\ObjectRecognition.Foundation.Utilities.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Release\ObjectRecognition.Foundation.Windows.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Release\ImageFullscreen.baml
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Release\App.baml
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Release\ImageFullscreen.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Release\App.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Release\ObjectRecognition.Foundation.Windows_MarkupCompile.cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Release\ObjectRecognition.Foundation.Windows.g.resources
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Release\ObjectRecognition.Foundation.Windows.Properties.Resources.resources
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Release\ObjectRecognition.Foundation.Windows.csproj.GenerateResource.Cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Release\ObjectRecognition.Foundation.Windows.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Windows\obj\Release\ObjectRecognition.Foundation.Windows.pdb

@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationFramework.Aero2" />
     <Reference Include="System" />
@@ -99,11 +102,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\eye.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\ObjectRecognition.Feature.AdjustmentWindow\ObjectRecognition.Feature.AdjustmentWindow.csproj">
+      <Project>{C062DC2D-AD5C-46F3-BC47-B733C2A14E27}</Project>
+      <Name>ObjectRecognition.Feature.AdjustmentWindow</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ObjectRecognition.Feature.DetailsWindow\ObjectRecognition.Feature.DetailsWindow.csproj">
       <Project>{ECFD3152-53D6-4A77-83CD-FF7009D4E986}</Project>
       <Name>ObjectRecognition.Feature.DetailsWindow</Name>
@@ -122,9 +124,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\view.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Icons\SideMenu\adjustements.png" />
+    <Resource Include="Icons\SideMenu\details.png" />
+    <Resource Include="Icons\SideMenu\or.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\SideBar\add.png" />
+    <Resource Include="Icons\SideBar\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

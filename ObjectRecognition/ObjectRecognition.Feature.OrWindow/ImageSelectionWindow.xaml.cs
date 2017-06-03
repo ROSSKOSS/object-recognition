@@ -46,8 +46,13 @@ namespace ObjectRecognition.Feature.OrWindow
 
             var buildButton = new Foundation.UI.ActionButton("Build", 80, 30) { Margin = new Thickness(0, 5, 10, 10), HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom };
             Grid.SetRow(buildButton, 1);
-            buildButton.MouseLeftButtonUp += LoadImages;
+            buildButton.MouseLeftButtonUp += BuildHistogram;
             baseGrid.Children.Add(buildButton);
+        }
+
+        private void BuildHistogram(object sender, MouseButtonEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void LoadImages(object sender, MouseButtonEventArgs e)
@@ -57,7 +62,7 @@ namespace ObjectRecognition.Feature.OrWindow
             using (var fbd = new FolderBrowserDialog() { SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) })
             {
                 DialogResult result = fbd.ShowDialog();
-
+                
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
                     files = Directory.GetFiles(fbd.SelectedPath, "*.*", SearchOption.AllDirectories).Where(s => s.EndsWith(".bmp") || s.EndsWith(".jpg") || s.EndsWith(".png") || s.EndsWith(".jpeg")).ToList();
@@ -67,10 +72,11 @@ namespace ObjectRecognition.Feature.OrWindow
                     redColorWorker.RunWorkerCompleted += FilesLoaded;
                     redColorWorker.RunWorkerAsync(files);
                     statusLabel.Content = $"Current Folder: {fbd.SelectedPath}";
-                    _loadingSign = new LoadingSign() {HorizontalContentAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center};
+                    _loadingSign = new LoadingSign();
                     Grid.SetRow(_loadingSign, 1);
-                    infoLabel.Content = null;
                     baseGrid.Children.Add(_loadingSign);
+                    infoLabel.Content = null;
+                    
                 }
             }
 
@@ -84,11 +90,8 @@ namespace ObjectRecognition.Feature.OrWindow
             {
                 imagePanel.Children.Add(new ImageDisplay(imageDisplay, imageDisplay.Width, imageDisplay.Height) { Margin = new Thickness(5, 5, 5, 5) });
             }
+            amountLabel.Content = $"Images loaded: {imagePanel.Children.Count}";
         }
 
-        private void AddLoadingSign()
-        {
-
-        }
     }
 }

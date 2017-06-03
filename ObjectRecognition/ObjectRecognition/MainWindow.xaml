@@ -6,7 +6,7 @@
         xmlns:mainPageControls="clr-namespace:ObjectRecognition.Feature.MainPageControls;assembly=ObjectRecognition.Feature.MainPageControls"
 
         mc:Ignorable="d"
-        Title="Object Recognition Project" Height="720" Width="1280" Icon="Resources/view.png">
+        Title="Object Recognition Project" Height="720" Width="1280" Icon="icon.ico">
     <Grid x:Name="MainBodyGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="70"/>
@@ -24,7 +24,7 @@
             <Grid Margin="10,0" MouseLeftButtonUp="Grid_MouseLeftButtonUp" Background="#FFF4F5F7" Cursor="Hand">
                 <TextBlock x:Name="textBlock" TextOptions.TextRenderingMode="Aliased" HorizontalAlignment="Left" Margin="95,27,0,0" TextWrapping="Wrap" Text="Project.OR" VerticalAlignment="Top" FontSize="25" FontFamily="Ubuntu Light" Foreground="#FF4C5C76"/>
                 <Border HorizontalAlignment="Left" VerticalAlignment="Center" Width="65" Margin="16,16,0,20" Height="64" Background="#FFB0BED5" CornerRadius="10" BorderThickness="0">
-                    <Image x:Name="image" Source="Resources/eye.png" Height="Auto" Width="Auto"/>
+                    <Image x:Name="image" Source="Icons/eye.png" Height="Auto" Width="Auto"/>
                 </Border>
                 <Label x:Name="label" TextOptions.TextRenderingMode="Aliased" Content="object recognition" HorizontalAlignment="Left" Margin="91,45,0,0" VerticalAlignment="Top" Foreground="#FF90A4C5"/>
             </Grid>

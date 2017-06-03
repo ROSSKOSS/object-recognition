@@ -18,3 +18,5 @@ C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.F
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\Button.baml
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\ImageDisplay.g.cs
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\ImageDisplay.baml
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\Slider.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\Slider.baml

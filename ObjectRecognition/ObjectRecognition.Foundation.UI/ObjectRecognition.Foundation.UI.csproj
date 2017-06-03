@@ -61,6 +61,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Slider.xaml.cs">
+      <DependentUpon>Slider.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Button.xaml.cs">
@@ -111,12 +114,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Slider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ObjectRecognition.Foundation.Utilities\ObjectRecognition.Foundation.Utilities.csproj">
       <Project>{7A87C98D-3A62-4670-A3C5-65704A8D8116}</Project>
       <Name>ObjectRecognition.Foundation.Utilities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Slider Arrows\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Slider Arrows\right-arrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectRecognition.Foundatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectRecognition.Feature.OrWindow", "ObjectRecognition.Feature.OrWindow\ObjectRecognition.Feature.OrWindow.csproj", "{86C77089-E298-4653-BD99-EF6D2BC60004}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectRecognition.Feature.AdjustmentWindow", "ObjectRecognition.Feature.AdjustmentWindow\ObjectRecognition.Feature.AdjustmentWindow.csproj", "{C062DC2D-AD5C-46F3-BC47-B733C2A14E27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{86C77089-E298-4653-BD99-EF6D2BC60004}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86C77089-E298-4653-BD99-EF6D2BC60004}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86C77089-E298-4653-BD99-EF6D2BC60004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C062DC2D-AD5C-46F3-BC47-B733C2A14E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C062DC2D-AD5C-46F3-BC47-B733C2A14E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C062DC2D-AD5C-46F3-BC47-B733C2A14E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C062DC2D-AD5C-46F3-BC47-B733C2A14E27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,5 +74,6 @@ Global
 		{B9DD657D-A74D-4A7B-851F-DFC5C1D15044} = {245C54CB-CE7F-4C6C-8E39-BA70AEC575A3}
 		{5611E631-F333-4CD7-B01E-8E4B76C04073} = {245C54CB-CE7F-4C6C-8E39-BA70AEC575A3}
 		{86C77089-E298-4653-BD99-EF6D2BC60004} = {1A05161A-B825-404C-A835-4520A79B3414}
+		{C062DC2D-AD5C-46F3-BC47-B733C2A14E27} = {1A05161A-B825-404C-A835-4520A79B3414}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,12 @@
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\bin\Release\ObjectRecognition.Foundation.Utilities.exe.config
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\bin\Release\ObjectRecognition.Foundation.Utilities.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\bin\Release\ObjectRecognition.Foundation.Utilities.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Release\App.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Release\ObjectRecognition.Foundation.Utilities_MarkupCompile.cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Release\ObjectRecognition.Foundation.Utilities_MarkupCompile.lref
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Release\App.baml
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Release\ObjectRecognition.Foundation.Utilities.g.resources
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Release\ObjectRecognition.Foundation.Utilities.Properties.Resources.resources
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Release\ObjectRecognition.Foundation.Utilities.csproj.GenerateResource.Cache
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Release\ObjectRecognition.Foundation.Utilities.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.Utilities\obj\Release\ObjectRecognition.Foundation.Utilities.pdb
