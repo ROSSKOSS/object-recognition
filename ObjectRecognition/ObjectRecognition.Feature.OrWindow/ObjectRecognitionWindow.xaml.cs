@@ -29,9 +29,11 @@ namespace ObjectRecognition.Feature.OrWindow
     /// </summary>
     public partial class ObjectRecognitionWindow : UserControl
     {
+        private Bitmap SourceBitmap { get; set; }
         public ObjectRecognitionWindow(Bitmap sourceBitmap)
         {
             InitializeComponent();
+            SourceBitmap = (Bitmap)sourceBitmap.Clone();
             SetUpButtons();
 
         }
@@ -54,7 +56,7 @@ namespace ObjectRecognition.Feature.OrWindow
         private void OpenCreateHistogramWindow(object sender, MouseButtonEventArgs e)
         {
             parentGrid.Children.Clear();
-            parentGrid.Children.Add(new ImageSelectionWindow() {Width = Double.NaN, Height = Double.NaN});
+            parentGrid.Children.Add(new ImageSelectionWindow((Bitmap)SourceBitmap.Clone()) {Width = Double.NaN, Height = Double.NaN});
         }
 
         

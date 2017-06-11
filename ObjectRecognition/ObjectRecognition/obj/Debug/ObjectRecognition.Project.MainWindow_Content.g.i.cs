@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/slider%20arrows/left-arrow.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/slider%20arrows/right-arrow.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/specialbuttons/reset.png")]
 
 

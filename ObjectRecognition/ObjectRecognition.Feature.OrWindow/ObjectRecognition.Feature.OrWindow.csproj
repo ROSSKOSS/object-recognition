@@ -73,6 +73,9 @@
     <Compile Include="ImageSelectionWindow.xaml.cs">
       <DependentUpon>ImageSelectionWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LbpComparisonWindow.xaml.cs">
+      <DependentUpon>LbpComparisonWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Worker\LoadImagesWorker.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -108,6 +111,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="ImageSelectionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LbpComparisonWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

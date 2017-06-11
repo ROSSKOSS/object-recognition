@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ObjectRecognition.Foundation.UI"
-             mc:Ignorable="d" Width="400" Height="51" Margin="0">
+             mc:Ignorable="d" Width="400" Height="38" Margin="0">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="72"/>
@@ -19,7 +19,7 @@
                     <RectangleGeometry Rect="0,0,72,72"/>
                 </Rectangle.Clip>
             </Rectangle>
-            <Image x:Name="image" HorizontalAlignment="Center" Height="32" VerticalAlignment="Center" Width="32" Source="Slider Arrows/left-arrow.png"/>
+            <Image x:Name="image" Source="Slider Arrows/left-arrow.png" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center" Width="20"/>
         </Grid>
         <Grid x:Name="rightGrid" Grid.Column="2" Margin="1,0,0,0" MouseEnter="rightGrid_MouseEnter" MouseLeave="rightGrid_MouseLeave" MouseLeftButtonDown="rightGrid_MouseLeftButtonDown" MouseLeftButtonUp="rightGrid_MouseLeftButtonUp">
             <Rectangle x:Name="rightArrow" Fill="#FF0052CC" RadiusX="5" RadiusY="5" StrokeThickness="0" Margin="-6,0,0,0">
@@ -27,7 +27,7 @@
                     <RectangleGeometry Rect="5,0,78,72"/>
                 </Rectangle.Clip>
             </Rectangle>
-            <Image x:Name="image_Copy" HorizontalAlignment="Center" Height="32" VerticalAlignment="Center" Width="32" Source="Slider Arrows/right-arrow.png"/>
+            <Image x:Name="image_Copy" Source="Slider Arrows/right-arrow.png" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center" Width="20" RenderTransformOrigin="0.1,0.45"/>
         </Grid>
 
     </Grid>

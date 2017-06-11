@@ -24,3 +24,5 @@ C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.F
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\bin\Debug\ObjectRecognition.Foundation.UI.pdb
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\obj\Debug\ImageSelectionWindow.g.cs
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\obj\Debug\ImageSelectionWindow.baml
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\obj\Debug\LbpComparisonWindow.g.cs
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Feature.OrWindow\obj\Debug\LbpComparisonWindow.baml

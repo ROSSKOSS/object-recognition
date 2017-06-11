@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ObjectRecognition.Foundation.Utilities.Bitmap
 {
     public class ColorStatistic
     {
-        enum Colors
+        private enum Colors
         {
             Red, Green, Blue, None
         }
+
         public void GetRedColors(object sender, DoWorkEventArgs e)
         {
             var source = (System.Drawing.Bitmap)e.Argument;
@@ -65,14 +61,14 @@ namespace ObjectRecognition.Foundation.Utilities.Bitmap
         public void GetColorDistribution(object sender, DoWorkEventArgs e)
         {
             var source = (System.Drawing.Bitmap)e.Argument;
-            
+
             var colorRgb = new int[3];
             for (int y = 0; y < source.Height; y++)
             {
                 for (int x = 0; x < source.Width; x++)
                 {
                     var popularColor = GetPopularColor(source.GetPixel(x, y));
-                    if (Colors.Red==popularColor)
+                    if (Colors.Red == popularColor)
                     {
                         colorRgb[0]++;
                     }
@@ -107,6 +103,21 @@ namespace ObjectRecognition.Foundation.Utilities.Bitmap
             {
                 return Colors.None;
             }
+        }
+
+        public void GrayScale(object sender, DoWorkEventArgs e)
+        {
+            System.Drawing.Bitmap source = ((System.Drawing.Bitmap)e.Argument);
+            for (int x = 0; x < source.Width; x++)
+            {
+                for (int y = 0; y < source.Height; y++)
+                {
+                    var pixel = source.GetPixel(x, y);
+                    var average = (pixel.R + pixel.G + pixel.B) / 3;
+                    source.SetPixel(x, y, Color.FromArgb(average, average, average));
+                }
+            }
+            e.Result = source;
         }
     }
 }

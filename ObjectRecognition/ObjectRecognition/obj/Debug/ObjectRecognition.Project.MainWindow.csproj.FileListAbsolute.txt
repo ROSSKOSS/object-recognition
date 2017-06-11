@@ -33,3 +33,4 @@ C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\b
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Feature.OrWindow.pdb
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Feature.AdjustmentWindow.exe
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ObjectRecognition.Feature.AdjustmentWindow.pdb
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition\bin\Debug\ImageProcessor.dll

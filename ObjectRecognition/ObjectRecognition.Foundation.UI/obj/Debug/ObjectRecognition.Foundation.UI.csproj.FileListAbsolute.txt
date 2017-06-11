@@ -20,3 +20,5 @@ C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.F
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\ImageDisplay.baml
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\Slider.g.cs
 C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\obj\Debug\Slider.baml
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\bin\Debug\ObjectRecognition.Feature.MainPageControls.exe
+C:\Users\User\Documents\object-recognition\ObjectRecognition\ObjectRecognition.Foundation.UI\bin\Debug\ObjectRecognition.Feature.MainPageControls.pdb

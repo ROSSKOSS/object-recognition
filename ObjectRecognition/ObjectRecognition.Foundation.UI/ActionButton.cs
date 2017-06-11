@@ -11,7 +11,6 @@ namespace ObjectRecognition.Foundation.UI
 {
     public class ActionButton : Button
     {
-
         public ActionButton(string title, double width, double height) : base(title, width, height)
         {
             Title.Foreground = (Brush)new BrushConverter().ConvertFrom(Foundation.Utilities.Defaults.ActionButton.FontColor);

@@ -63,11 +63,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bitmap\BitmapExtensions.cs" />
     <Compile Include="Bitmap\ColorStatistic.cs" />
+    <Compile Include="Bitmap\ImageSourceExtensions.cs" />
     <Compile Include="Converters\BitmapConverter.cs" />
     <Compile Include="Converters\ColorConverter.cs" />
     <Compile Include="Defaults.cs" />
     <Compile Include="FileOpener\BitmapOpener.cs" />
+    <Compile Include="LocalBinaryPattern\LocalBinaryPattern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

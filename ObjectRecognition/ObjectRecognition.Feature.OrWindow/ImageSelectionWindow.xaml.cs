@@ -32,9 +32,11 @@ namespace ObjectRecognition.Feature.OrWindow
     public partial class ImageSelectionWindow : UserControl
     {
         private LoadingSign _loadingSign;
-        public ImageSelectionWindow()
+        private Bitmap SourceBitmap;
+        public ImageSelectionWindow(Bitmap sourceBitmap)
         {
             InitializeComponent();
+            SourceBitmap = (Bitmap)sourceBitmap.Clone();
             SetUpButtons();
         }
 
@@ -52,7 +54,9 @@ namespace ObjectRecognition.Feature.OrWindow
 
         private void BuildHistogram(object sender, MouseButtonEventArgs e)
         {
-            throw new NotImplementedException();
+            baseGrid.Children.Clear();
+            baseGrid.RowDefinitions.Clear();
+            baseGrid.Children.Add(new LbpComparisonWindow((Bitmap)SourceBitmap.Clone()) { Width = Double.NaN, Height = Double.NaN });
         }
 
         private void LoadImages(object sender, MouseButtonEventArgs e)
@@ -62,7 +66,7 @@ namespace ObjectRecognition.Feature.OrWindow
             using (var fbd = new FolderBrowserDialog() { SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) })
             {
                 DialogResult result = fbd.ShowDialog();
-                
+
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
                     files = Directory.GetFiles(fbd.SelectedPath, "*.*", SearchOption.AllDirectories).Where(s => s.EndsWith(".bmp") || s.EndsWith(".jpg") || s.EndsWith(".png") || s.EndsWith(".jpeg")).ToList();
@@ -76,7 +80,7 @@ namespace ObjectRecognition.Feature.OrWindow
                     Grid.SetRow(_loadingSign, 1);
                     baseGrid.Children.Add(_loadingSign);
                     infoLabel.Content = null;
-                    
+
                 }
             }
 

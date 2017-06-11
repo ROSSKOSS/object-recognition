@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="ObjectRecognition.Feature.OrWindow.LbpComparisonWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ObjectRecognition.Feature.OrWindow"
+             xmlns:wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             mc:Ignorable="d" 
+              Width="1200" Height="560">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="297*"/>
+            <RowDefinition Height="263*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="lbpGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <wpf:CartesianChart x:Name="singleLbp"  AnimationsSpeed="0:0:0.8" DisableAnimations="True" FontFamily="Ubuntu Light" Hoverable="False" />
+            <wpf:CartesianChart x:Name="multiLbp"  AnimationsSpeed="0:0:0.8" DisableAnimations="True" FontFamily="Ubuntu Light" Hoverable="False" Grid.Column="1"/>
+        </Grid>
+    </Grid>
+</UserControl>

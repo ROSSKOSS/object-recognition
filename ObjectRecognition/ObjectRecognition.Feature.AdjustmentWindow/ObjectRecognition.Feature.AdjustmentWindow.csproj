@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ImageProcessor, Version=2.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.2.5.4\lib\net45\ImageProcessor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="LiveCharts, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>..\packages\LiveCharts.0.9.6\lib\net45\LiveCharts.dll</HintPath>
       <Private>True</Private>
@@ -107,6 +111,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ObjectRecognition.Feature.MainPageControls\ObjectRecognition.Feature.MainPageControls.csproj">
+      <Project>{1FB4CC20-5CC7-433C-ABAC-C16CCF3C92B8}</Project>
+      <Name>ObjectRecognition.Feature.MainPageControls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ObjectRecognition.Foundation.UI\ObjectRecognition.Foundation.UI.csproj">
       <Project>{b9dd657d-a74d-4a7b-851f-dfc5c1d15044}</Project>
       <Name>ObjectRecognition.Foundation.UI</Name>
@@ -115,7 +123,12 @@
       <Project>{7A87C98D-3A62-4670-A3C5-65704A8D8116}</Project>
       <Name>ObjectRecognition.Foundation.Utilities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ObjectRecognition.Foundation.Windows\ObjectRecognition.Foundation.Windows.csproj">
+      <Project>{5611E631-F333-4CD7-B01E-8E4B76C04073}</Project>
+      <Name>ObjectRecognition.Foundation.Windows</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

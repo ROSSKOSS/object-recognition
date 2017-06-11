@@ -46,5 +46,11 @@
             public const string DownColor = "#0049B0";
             public const string FontColor = "#FFFFFFFF";
         }
+        public struct SpecialButton
+        {
+            public const string Color = "#FFF4F5F7";
+            public const string EnterColor = "#EAECF0";
+            public const string DownColor = "#DEEBFF";
+        }
     }
 }

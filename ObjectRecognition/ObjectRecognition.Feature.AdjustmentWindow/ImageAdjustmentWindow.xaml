@@ -19,7 +19,7 @@
                 <RowDefinition Height="300"/>
             </Grid.RowDefinitions>
             <Border Background="White" CornerRadius="5" BorderBrush="#FFEAECF0" BorderThickness="1" Padding="5" Margin="0,10,10,10">
-                <wpf:CartesianChart></wpf:CartesianChart>
+                <wpf:CartesianChart x:Name="colorChart"></wpf:CartesianChart>
             </Border>
 
         </Grid>
@@ -28,14 +28,14 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Border x:Name="imageBorder" Height="237" Margin="10,10,0,0" VerticalAlignment="Top" Background="White" CornerRadius="5" BorderBrush="#FFEAECF0" BorderThickness="1" Padding="5">
-                <Image x:Name="image" Stretch="None" HorizontalAlignment="Right" Width="420" />
-            </Border>
+            <Grid x:Name="imageDisplayGrid" Margin="10,10,0,0" MouseEnter="imageDisplayGrid_MouseEnter" MouseLeave="imageDisplayGrid_MouseLeave">
+                <Border x:Name="imageBorder" Height="237" VerticalAlignment="Top" Background="White" CornerRadius="5" BorderBrush="#FFEAECF0" BorderThickness="1" Padding="5">
+                    <Image x:Name="image" Stretch="None" HorizontalAlignment="Right" Width="420" />
+                </Border>
+            </Grid>
             <Border Background="White" CornerRadius="5" BorderBrush="#FFEAECF0" BorderThickness="1" Padding="5" Margin="10,10,0,10" Grid.Row="1">
                 <ScrollViewer  VerticalScrollBarVisibility="Auto">
-                    <StackPanel x:Name="adjustementPanel">
-                        
-                    </StackPanel>
+                    <StackPanel x:Name="adjustementPanel"/>
                 </ScrollViewer>
             </Border>
         </Grid>
