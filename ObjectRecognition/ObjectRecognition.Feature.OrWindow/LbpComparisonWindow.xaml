@@ -9,8 +9,8 @@
               Width="1200" Height="560">
     <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="297*"/>
-            <RowDefinition Height="263*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -20,8 +20,20 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <wpf:CartesianChart x:Name="singleLbp"  AnimationsSpeed="0:0:0.8" DisableAnimations="True" FontFamily="Ubuntu Light" Hoverable="False" />
-            <wpf:CartesianChart x:Name="multiLbp"  AnimationsSpeed="0:0:0.8" DisableAnimations="True" FontFamily="Ubuntu Light" Hoverable="False" Grid.Column="1"/>
+            <Border x:Name="leftBorder" Background="White" CornerRadius="5" BorderBrush="#FFEAECF0" BorderThickness="1" Margin="10" Padding="5" >
+                <Grid x:Name="singleLbpGrid" >
+                    <wpf:CartesianChart x:Name="singleLbp" UpdaterState="Paused" DisableAnimations="True" Hoverable="False"/>
+                </Grid>
+            </Border>
+            <Border x:Name="rightBorder" Background="White" CornerRadius="5" BorderBrush="#FFEAECF0" BorderThickness="1" Grid.Column="1" Margin="10" Padding="5" >
+                <Grid x:Name="multiLbpGrid">
+                    <wpf:CartesianChart x:Name="multiLbp" UpdaterState="Paused" DisableAnimations="True" Hoverable="False"/>
+                </Grid>
+            </Border>
         </Grid>
+        <Border x:Name="bottomBorder" Background="White" CornerRadius="5" BorderBrush="#FFEAECF0" BorderThickness="1" Margin="10" Grid.Row="1" Padding="5">
+            <Grid x:Name="infoGrid"/>
+
+        </Border>
     </Grid>
 </UserControl>

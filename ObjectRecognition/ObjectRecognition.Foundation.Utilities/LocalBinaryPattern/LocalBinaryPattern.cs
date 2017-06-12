@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
+using System.IO;
 
 namespace ObjectRecognition.Foundation.Utilities.LocalBinaryPattern
 {
@@ -84,9 +84,14 @@ namespace ObjectRecognition.Foundation.Utilities.LocalBinaryPattern
 
         public void MakeBitmap(object sender, DoWorkEventArgs e)
         {
-            var source = (System.Drawing.Bitmap)e.Argument;
+            var model = e.Argument as List<object>;
+            byte[] array = new byte[(model[0] as byte[]).Length];
+            (model[0] as byte[]).CopyTo(array,0);
+            var bitmap = model[1] as System.Drawing.Bitmap;
+            Stream stream = new MemoryStream(array);
 
-
+            System.Drawing.Bitmap result = new System.Drawing.Bitmap(stream);
+            e.Result = result.Clone();
         }
     }
 

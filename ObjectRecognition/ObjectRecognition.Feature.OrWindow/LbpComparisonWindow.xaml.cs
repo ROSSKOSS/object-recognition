@@ -1,24 +1,14 @@
-﻿using System;
+﻿using LiveCharts;
+using LiveCharts.Wpf;
+using ObjectRecognition.Foundation.UI;
+using ObjectRecognition.Foundation.Utilities.LocalBinaryPattern;
+using ObjectRecognition.Foundation.Windows;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using LiveCharts;
-using LiveCharts.Wpf;
-using ObjectRecognition.Foundation.Utilities.Bitmap;
-using ObjectRecognition.Foundation.Utilities.LocalBinaryPattern;
-using Color = System.Windows.Media.Color;
 
 namespace ObjectRecognition.Feature.OrWindow
 {
@@ -28,12 +18,18 @@ namespace ObjectRecognition.Feature.OrWindow
     public partial class LbpComparisonWindow : UserControl
     {
         private Bitmap SourceBitmap { get; set; }
+        private LoadingSign _singleLbpLoadingSign;
+        private LoadingSign _multiLbpLoadingSign;
+
         public LbpComparisonWindow(Bitmap sourceBitmap)
         {
             InitializeComponent();
             Width = Double.NaN;
             Height = Double.NaN;
             SourceBitmap = (Bitmap)sourceBitmap.Clone();
+
+            _singleLbpLoadingSign = new LoadingSign();
+            singleLbpGrid.Children.Add(_singleLbpLoadingSign);
 
             var lbpWorker = new BackgroundWorker();
             lbpWorker.WorkerSupportsCancellation = true;
@@ -60,29 +56,39 @@ namespace ObjectRecognition.Feature.OrWindow
             countWorker.DoWork += new LocalBinaryPattern().CountDistinct;
             countWorker.RunWorkerCompleted += CountDistinctFinished;
             countWorker.RunWorkerAsync(result);
+
+            //var bitmapWorker = new BackgroundWorker();
+            //bitmapWorker.WorkerSupportsCancellation = true;
+            //bitmapWorker.DoWork += new LocalBinaryPattern().MakeBitmap;
+            //bitmapWorker.RunWorkerCompleted += MadeBitmap;
+            //bitmapWorker.RunWorkerAsync(new List<object> {result, SourceBitmap.Clone()});
+        }
+
+        private void MadeBitmap(object sender, RunWorkerCompletedEventArgs e)
+        {
+            new ImageFullscreen(e.Result as Bitmap, "Test");
         }
 
         private void CountDistinctFinished(object sender, RunWorkerCompletedEventArgs e)
         {
             var result = (Dictionary<byte, int>)e.Result;
-            singleLbp.UpdaterState = UpdaterState.Running;
-            var lines = new LineSeries()
+
+            var seriesCollection = new SeriesCollection
             {
-                Values = new ChartValues<int>(result.Values),
-                PointGeometry = null,
-                LineSmoothness = 0,
-                Title = "Amount:"
+                new LineSeries()
+                {
+                    Values = new ChartValues<int>(result.Values),
+                    PointGeometry = null,
+                    LineSmoothness = 0,
+                    Title = "Amount:"
+                }
             };
-            var seriesCollection = new SeriesCollection(lines);
             singleLbp.Series = seriesCollection;
-            singleLbp.SeriesColors = new ColorsCollection() { Color.FromRgb(255, 0, 0) };
+            singleLbp.SeriesColors = new ColorsCollection() { System.Windows.Media.Color.FromRgb(0, 130, 255) };
             singleLbp.AxisX = new AxesCollection() { new Axis() { Title = "Brightness value", ShowLabels = true } };
             singleLbp.AxisY = new AxesCollection() { new Axis() { Title = "Amount", ShowLabels = true } };
-        }
-
-        private void singleLbp_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-
+            singleLbpGrid.Children.Remove(_singleLbpLoadingSign);
+            singleLbp.UpdaterState = UpdaterState.Running;
         }
     }
 }

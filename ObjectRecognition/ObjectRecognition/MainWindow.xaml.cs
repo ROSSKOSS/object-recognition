@@ -136,13 +136,16 @@ namespace ObjectRecognition.Project.MainWindow
         {
             if (_orWindow == null)
             {
-                SourceBitmap = (Bitmap)(_adjustmentWindow as ImageAdjustmentWindow).ArchivedBitmap.Clone();
-                _orWindow = new ObjectRecognitionWindow(SourceBitmap)
+                if (_adjustmentWindow != null)
                 {
-                    Width = double.NaN,
-                    Height = double.NaN
-                }; 
-                pageHost.Children.Add(_orWindow);
+                    SourceBitmap = (Bitmap)(_adjustmentWindow as ImageAdjustmentWindow).ArchivedBitmap.Clone();
+                    _orWindow = new ObjectRecognitionWindow(SourceBitmap)
+                    {
+                        Width = double.NaN,
+                        Height = double.NaN
+                    };
+                    pageHost.Children.Add(_orWindow);
+                }
             }
             else
             {
