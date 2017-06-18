@@ -33,6 +33,7 @@ namespace ObjectRecognition.Feature.OrWindow
     {
         private LoadingSign _loadingSign;
         private Bitmap SourceBitmap;
+        private List<Bitmap> Bitmaps;
         public ImageSelectionWindow(Bitmap sourceBitmap)
         {
             InitializeComponent();
@@ -45,7 +46,7 @@ namespace ObjectRecognition.Feature.OrWindow
             var selectFolderButton = new Foundation.UI.Button("Select Folder", 150, 40) { Margin = new Thickness(10, 10, 10, 10) };
             selectFolderButton.MouseLeftButtonUp += LoadImages;
             baseGrid.Children.Add(selectFolderButton);
-
+            Bitmaps = new List<Bitmap>();
             var buildButton = new Foundation.UI.ActionButton("Build", 80, 30) { Margin = new Thickness(0, 5, 10, 10), HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom };
             Grid.SetRow(buildButton, 1);
             buildButton.MouseLeftButtonUp += BuildHistogram;
@@ -56,7 +57,14 @@ namespace ObjectRecognition.Feature.OrWindow
         {
             baseGrid.Children.Clear();
             baseGrid.RowDefinitions.Clear();
-            baseGrid.Children.Add(new LbpComparisonWindow((Bitmap)SourceBitmap.Clone()) { Width = Double.NaN, Height = Double.NaN });
+            foreach (var imagePanelChild in imagePanel.Children)
+            {
+                if ((imagePanelChild as ImageDisplay).DeletedFlag == false)
+                {
+                    Bitmaps.Add((imagePanelChild as ImageDisplay).Bitmap);
+                }
+            }
+            baseGrid.Children.Add(new LbpComparisonWindow((Bitmap)SourceBitmap.Clone(), Bitmaps) { Width = Double.NaN, Height = Double.NaN });
         }
 
         private void LoadImages(object sender, MouseButtonEventArgs e)
@@ -92,6 +100,7 @@ namespace ObjectRecognition.Feature.OrWindow
             imagePanel.Children.Clear();
             foreach (var imageDisplay in displays)
             {
+
                 imagePanel.Children.Add(new ImageDisplay(imageDisplay, imageDisplay.Width, imageDisplay.Height) { Margin = new Thickness(5, 5, 5, 5) });
             }
             amountLabel.Content = $"Images loaded: {imagePanel.Children.Count}";

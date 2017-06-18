@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 
 namespace ObjectRecognition.Foundation.Utilities.LocalBinaryPattern
 {
@@ -86,16 +87,58 @@ namespace ObjectRecognition.Foundation.Utilities.LocalBinaryPattern
         {
             var model = e.Argument as List<object>;
             byte[] array = new byte[(model[0] as byte[]).Length];
-            (model[0] as byte[]).CopyTo(array,0);
+            (model[0] as byte[]).CopyTo(array, 0);
             var bitmap = model[1] as System.Drawing.Bitmap;
             Stream stream = new MemoryStream(array);
 
             System.Drawing.Bitmap result = new System.Drawing.Bitmap(stream);
             e.Result = result.Clone();
         }
+        public void MakeArrays(object sender, DoWorkEventArgs e)
+        {
+            var source = (List<int[,]>)e.Argument;
+            var result = new List<int[]>();
+            var groups = new Dictionary<int[], int>();
+            int flag = 0;
+            foreach (var array in source)
+            {
+                result.Add(array.ToArray());
+            }
+            foreach (var element in result)
+            {
+
+                for (int i = 0; i < groups.Keys.Count; i++)
+                {
+                    if (groups.Keys.ToArray()[i].Contains(element.ToByte()))
+                    {
+                        flag = 1;
+                        groups[groups.Keys.ToArray()[i]]++;
+                    }
+                }
+                if (flag == 1)
+                {
+
+                }
+                else
+                {
+                    var group = new int[8];
+                    group[0] = element.ToByte();
+                    var temp = element;
+                    for (int i = 1; i < 8; i++)
+                    {
+                        temp = temp.ShiftRight();
+                        group[i] = temp.ToByte();
+                    }
+                    groups.Add(group, 0);
+                }
+                flag = 0;
+            }
+            var res = groups;
+            e.Result = groups;
+        }
     }
 
-    public static class LbpHelper
+    public static class ArrayExtensions
     {
         public static byte ToByte(this int[,] source)
         {
@@ -111,6 +154,40 @@ namespace ObjectRecognition.Foundation.Utilities.LocalBinaryPattern
             array += source[0, 2];
 
             return Convert.ToByte(array, 2);
+        }
+        public static byte ToByte(this int[] source)
+        {
+            string array = String.Empty;
+            foreach (var i in source)
+            {
+                array += i;
+            }
+            return Convert.ToByte(array, 2);
+        }
+        public static int[] ToArray(this int[,] source)
+        {
+            var array = new int[8];
+
+            array[0] = source[1, 2];
+            array[1] = source[2, 2];
+            array[2] = source[2, 1];
+            array[3] = source[2, 0];
+            array[4] = source[1, 0];
+            array[5] = source[0, 0];
+            array[6] = source[0, 1];
+            array[7] = source[0, 2];
+
+            return array;
+        }
+        public static int[] ShiftRight(this int[] source)
+        {
+            var array = new int[8];
+            array[0] = source.Last();
+            for (int i = 1; i < 8; i++)
+            {
+                array[i] = source[i - 1];
+            }
+            return array;
         }
     }
 }

@@ -24,9 +24,11 @@ namespace ObjectRecognition.Foundation.UI
     public partial class ImageDisplay : UserControl
     {
         public bool DeletedFlag;
+        public Bitmap Bitmap { get; set; }
         public ImageDisplay(Bitmap source, double width, double height)
         {
             InitializeComponent();
+            Bitmap = (Bitmap)source.Clone();
             image.Source = BitmapConverter.ToImageSource(source);
             Width = width;
             Height = height;
